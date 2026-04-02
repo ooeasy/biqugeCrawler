@@ -1,3 +1,11 @@
+/novel
+*.epub
+.idea/
+/bin
+*backup.py
+process.py
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
