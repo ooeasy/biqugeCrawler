@@ -1,9 +1,9 @@
 /novel
 *.epub
 .idea/
-/bin
 *backup.py
 process.py
+test.py
 
 
 # Byte-compiled / optimized / DLL files

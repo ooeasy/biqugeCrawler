@@ -45,9 +45,7 @@ def haveNextPage(page):
 
 def nextPageLink(page):
     aLable = page.find('a', string='下一页')
-    if aLable:
-        pass
-    else:
+    if not aLable:
         aLable = page.find('a', string='下一章')
     if aLable and 'href' in aLable.attrs:
         return aLable['href']
@@ -98,8 +96,8 @@ def run(url, start=1, end=1, select=1):
             if len(url) < 20:
                 break
             start += 1
-    except BaseException:
-        print("错误重试")
+    except Exception as e:
+        print(f"错误重试: {e}")
         run(url, start, end)
 
 
